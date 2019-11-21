@@ -28,7 +28,8 @@ spec:
     spec:
       containers:
       - name: multus-admission-controller
-        image: {{.MultusAdmissionControllerImage}}
+        #image: {{.MultusAdmissionControllerImage}}
+        image: quay.io/aneeshkp/net-attach-def-admission-controller:734
         command:
         - /usr/bin/webhook
         args:
